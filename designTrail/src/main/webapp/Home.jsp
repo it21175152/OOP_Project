@@ -10,24 +10,14 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
 
-
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
-
 <link rel="stylesheet" href="UserAccount.css">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <link href='https://fontawesome/css/all.css' rel='stylesheet'>
 
 <body>
-
-
-
-
-
-
-
-
 
 
 
@@ -56,6 +46,8 @@
 
 
 
+
+
 <header>
 	<img alt="logo" src="logo-06.png" class="logo">
 	<nav>
@@ -77,42 +69,21 @@
 
 
 
+        Welcome <!--  <%=session.getAttribute("cusDetails")%>-->
+               
+      Home Page (Login Success)
+       
+       
+       <!--  <a href="./ProfileServlet">My Profile</a> 
+       <a href="./ProfileServlet">My Profile</a> 
+        <a href="./LogoutServlet">Logout</a> -->
+       
+   
 
 
 
 
 
-
-<%
-	String id=request.getParameter("id");
-	String name=request.getParameter("name");
-	String email=request.getParameter("email");
-	String phone=request.getParameter("phone");
-	String username=request.getParameter("username");
-	String password=request.getParameter("password");
-%> 
-
-<h1 align="center">Customer Account Delete</h1>
-
-<form action="DeleteCustomerServlet" method="post">
-<div id="delete" align="center">
-<table>
-		<tr><td>Customer ID: </td><td><input type="text" name="cusid" value="<%=id%>" readonly></td></tr>
-		<tr><td>Name: </td><td><input type="text" name="name" value="<%=name%>" readonly></td></tr>
-		<tr><td>Email: </td><td><input type="text" name="email" value="<%=email%>" readonly></td></tr>
-		<tr><td>Phone Number: </td><td><input type="text" name="phone" value="<%=phone%>" readonly></td></tr>
-		<tr><td>User Name: </td><td><input type="text" name="uname" value="<%=username%>" readonly></td></tr>
-		<tr><td><input type="submit" name="submit" value="Delete My Account" readonly></td></tr>
-</table></div>
-</form>
-	
-	
-	
-	
-	
-	
-
-</body>
 
 <footer>
 	<div class="footer-content">
@@ -133,4 +104,7 @@
 	</div>
 </footer>
 
+
+
+</body>
 </html>

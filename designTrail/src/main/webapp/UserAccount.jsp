@@ -4,6 +4,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+
+<meta charset="utf-8">
+      <title>Floating Icons on Left Border</title>
+      <link rel="stylesheet" href="Design.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+
+
 <meta charset="ISO-8859-1">
 <title>Your Account</title>
 </head>
@@ -14,11 +23,20 @@
 <body>
 
 
+<div id="social">
 
+<nav>
+         <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a></li>
+            <li><a href="#"><i class="fab fa-github"></i><span>Github</span></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i><span>Youtube</span></a></li>
+         </ul>
+      </nav>
 
-
-
-
+</div>
 
 
 
@@ -56,9 +74,12 @@
 			<li><a href="#">Services</a></li>
 			<li><a href="#">Items</a></li>
 			<li><a href="#">About Us</a></li>
+			<li><a href="./ProfileServlet">My Profile</a></li>
+			<li><a href="./LogoutServlet">Logout</a></li> 
 		</ul>
 	</nav>
-	<a class="cta" href="Login.jsp"><button>Sign out</button></a>
+	<!-- <a class="cta" href="Login.jsp"><button>Sign out</button></a>
+	<a class="cta" href="./LogoutServlet"><button>Sign out</button></a>-->
 	
 </header>
 
